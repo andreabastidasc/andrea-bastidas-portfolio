@@ -12,7 +12,7 @@ building the interface and the services behind it, and making sure it reaches us
 
 ## What I bring to a team
 
-- **Product mindset** — I care about *why* a feature exists before *how* it's built, and I work closely
+- **Product mindset** — I care about _why_ a feature exists before _how_ it's built, and I work closely
   with design and business on definition and roadmap.
 - **End-to-end delivery** — React, Next.js, Angular and React Native on the front; Python (Django, FastAPI)
   on the back; AWS, Azure, Docker and CI/CD to ship it.
