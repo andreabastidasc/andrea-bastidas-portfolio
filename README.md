@@ -40,7 +40,7 @@ Most of my professional code lives in private company repositories, so this proj
 - [x] Design tokens: colors, fonts and theme variables
 - [x] Layout: header, footer and live Buenos Aires clock
 - [x] Dark mode toggle
-- [ ] Typed content model
+- [x] Typed content model
 - [ ] Hero with original SVG illustration
 - [ ] Home sections: selected work, experience, stack, about, contact
 - [ ] Case study pages
