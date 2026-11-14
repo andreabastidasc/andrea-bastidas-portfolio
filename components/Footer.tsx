@@ -10,9 +10,6 @@ export function Footer() {
                 <span>
                     © <CurrentYear /> {site.name}
                 </span>
-                <span>
-                    Designed &amp; built in {site.location} — <Clock /> ART
-                </span>
                 <Link href="#top" className="link-underline w-fit hover:text-accent">
                     Back to top ↑
                 </Link>
