@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
     --paper: #f5f2eb;
     --ink: #161616;
@@ -36,6 +38,17 @@
     --font-mono: var(--font-jetbrains), ui-monospace, monospace;
 }
 
+@utility page-container {
+    margin-inline: auto;
+    width: 100%;
+    max-width: 1240px;
+    padding-inline: 1.25rem;
+
+    @media (width >= 40rem) {
+        padding-inline: 2rem;
+    }
+}
+
 ::selection {
     background: var(--accent);
     color: var(--paper);
@@ -43,6 +56,12 @@
 
 html {
     scroll-behavior: smooth;
+}
+
+body {
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
 }
 
 @layer components {
