@@ -1,6 +1,48 @@
 @import "tailwindcss";
 
+/*
+ * Design tokens
+ * Raw values live in CSS variables so the dark theme only has to swap them.
+ * `@theme inline` exposes them to Tailwind as utilities: bg-paper, text-ink,
+ * text-muted, border-line, bg-card, fill-leaf, text-accent…
+ */
+:root {
+  --paper: #f5f2eb; /* warm off-white background */
+  --ink: #161616; /* main text */
+  --muted: #5c5952; /* secondary text — 6:1 on paper */
+  --line: #d9d4c7; /* dividers and borders */
+  --card: #ede8dd; /* subtle surfaces */
+  --leaf: #cfe6d2; /* illustration accent */
+  --accent: #2d3fe0; /* ultramarine */
+  color-scheme: light;
+}
+
+.dark {
+  --paper: #121211;
+  --ink: #f2efe8;
+  --muted: #a6a399;
+  --line: #2e2d2a;
+  --card: #1a1a18;
+  --leaf: #2e4a37;
+  --accent: #8e9bff; /* lighter blue so it keeps contrast on dark */
+  color-scheme: dark;
+}
+
 @theme inline {
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-paper: var(--paper);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-card: var(--card);
+  --color-leaf: var(--leaf);
+  --color-accent: var(--accent);
+
+  --font-serif: var(--font-instrument), Georgia, serif;
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, monospace;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--paper);
 }
