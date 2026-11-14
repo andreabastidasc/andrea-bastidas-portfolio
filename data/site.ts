@@ -4,6 +4,11 @@ export const site = {
     location: "Buenos Aires",
     timeZone: "America/Argentina/Buenos_Aires",
     email: "andrea.bcolina@gmail.com",
+    links: {
+        linkedin: "https://www.linkedin.com/in/andreabastidasc",
+        github: "https://github.com/andreabastidasc",
+        cv: "/cv/AndreaBastidas-CV.pdf",
+    },
 } as const;
 
 export const navigation = [
