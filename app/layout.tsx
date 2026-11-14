@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Instrument_Serif, Inter, JetBrains_Mono } from "next/font/google";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
+import { themeScript } from "@/lib/theme";
 import "./globals.css";
 
 const instrumentSerif = Instrument_Serif({
@@ -31,9 +33,13 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     return (
         <html
             lang="en"
+            suppressHydrationWarning
             className={`${instrumentSerif.variable} ${inter.variable} ${jetbrainsMono.variable} h-full antialiased`}
         >
             <body className="flex min-h-full flex-col bg-paper font-sans leading-relaxed text-ink">
+                <Script id="theme" strategy="beforeInteractive">
+                    {themeScript}
+                </Script>
                 <Header />
                 <div className="flex-1">{children}</div>
                 <Footer />
