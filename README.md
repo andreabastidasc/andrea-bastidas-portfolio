@@ -41,7 +41,7 @@ Most of my professional code lives in private company repositories, so this proj
 - [x] Layout: header, footer and live Buenos Aires clock
 - [x] Dark mode toggle
 - [x] Typed content model
-- [ ] Hero with original SVG illustration
+- [x] Hero with original SVG illustration
 - [ ] Home sections: selected work, experience, stack, about, contact
 - [ ] Case study pages
 - [ ] SEO, downloadable CV and deploy on Vercel
