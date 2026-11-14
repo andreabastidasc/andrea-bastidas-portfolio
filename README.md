@@ -36,8 +36,8 @@ Most of my professional code lives in private company repositories, so this proj
 ## Roadmap
 
 - [x] Bootstrap Next.js + TypeScript + Tailwind
-- [ ] Clean up boilerplate
-- [ ] Design tokens: colors, fonts and theme variables
+- [x] Clean up boilerplate
+- [x] Design tokens: colors, fonts and theme variables
 - [ ] Layout: header, footer and live Buenos Aires clock
 - [ ] Dark mode toggle
 - [ ] Typed content model
