@@ -38,8 +38,8 @@ Most of my professional code lives in private company repositories, so this proj
 - [x] Bootstrap Next.js + TypeScript + Tailwind
 - [x] Clean up boilerplate
 - [x] Design tokens: colors, fonts and theme variables
-- [ ] Layout: header, footer and live Buenos Aires clock
-- [ ] Dark mode toggle
+- [x] Layout: header, footer and live Buenos Aires clock
+- [x] Dark mode toggle
 - [ ] Typed content model
 - [ ] Hero with original SVG illustration
 - [ ] Home sections: selected work, experience, stack, about, contact
